@@ -1,5 +1,18 @@
-import Sidebar from "./components/Sidebar";
 import "./globals.css";
+import { Manrope, Inter } from "next/font/google";
+import Sidebar from "./components/Sidebar";
+
+const manrope = Manrope({
+  weights: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+
+const inter = Inter({
+  weights: ["400"],
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
       <body className="">
         <div className="sidebar">
           <Sidebar />
