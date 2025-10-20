@@ -1,6 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const AboutSection = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleReadMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <section>
       <div>
@@ -13,15 +20,14 @@ const AboutSection = () => {
           coding and a unique background as a professional chef. My experience
           in the culinary world has equipped me with invaluable
           skills—precision, creativity, and the ability to thrive in fast-paced,
-          high-pressure environments. As a chef, I’ve learned the art of
+          high-pressure environments. As a chef, I&apos;ve learned the art of
           adapting quickly, solving complex problems, and collaborating
-          seamlessly with a team to achieve the best results. Now, I’m eager to
-          transfer these skills into the tech field, where I can channel my
-          drive for excellence into building, optimizing, and improving digital
-          solutions.
-          <br />
-          <br />
-          <span>
+          seamlessly with a team to achieve the best results. Now, I&apos;m
+          eager to transfer these skills into the tech field, where I can
+          channel my drive for excellence into building, optimizing, and
+          improving digital solutions.
+          {!showMore && <span className="mt-2 block">...</span>}
+          <span className={`${showMore ? "block mt-2" : "hidden"}`}>
             At Code Institute, I honed my skills in web development, learning
             core technologies like HTML, CSS, JavaScript, and Python, and gained
             hands-on experience with project-based learning. My journey from the
@@ -32,6 +38,9 @@ const AboutSection = () => {
             contribute meaningfully to innovative projects.
           </span>
         </p>
+        <button className="mt-4" onClick={handleReadMore}>
+          {showMore ? "Read Less" : "Read More"}
+        </button>
       </div>
     </section>
   );
