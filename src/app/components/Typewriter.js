@@ -40,7 +40,7 @@ const Typewriter = () => {
     return () => clearTimeout(timeout);
   }, [text, isDeleting, pause, index]);
   return (
-    <span className="text-3xl">
+    <span className="text-xl md:text-3xl">
       {text}
       <span className="animate-pulse">|</span>
     </span>

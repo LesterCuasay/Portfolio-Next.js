@@ -26,9 +26,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter);
   font-weight: 400;
-  display: flex;
-  height: 100vh;
-  padding: 0 320px;
 }
 
 h1 {
@@ -40,19 +37,4 @@ h2,
 h3 {
   font-family: var(--font-manrope);
   font-weight: 400;
-}
-
-.sidebar {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 400px;
-  padding: 80px 40px;
-}
-
-.content {
-  flex: 1;
-  margin-left: 40px;
-  padding: 80px 40px;
-  overflow-y: auto;
 }
