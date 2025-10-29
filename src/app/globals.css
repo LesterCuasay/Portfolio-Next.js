@@ -8,12 +8,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-second-text-color: var(--second-text-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #331832;
     --foreground: #f5edf0;
+    --second-text-color: #58b5da;
   }
 }
 
@@ -28,6 +30,11 @@ body {
   font-weight: 400;
 }
 
+section {
+  min-height: 100vh;
+  padding: 5rem 2rem;
+}
+
 h1 {
   font-family: var(--font-manrope);
   font-weight: 700;
@@ -37,4 +44,23 @@ h2,
 h3 {
   font-family: var(--font-manrope);
   font-weight: 400;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--second-text-color);
+  border-radius: 5px 20px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background);
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem var(--second-text-color);
+}
+
+.btn:active {
+  transform: translateY(2px);
 }

@@ -11,11 +11,13 @@ const AboutSection = () => {
   return (
     <section>
       <div>
-        <h2>
-          About <span>Me</span>
+        <h2 className="text-2xl">
+          About <span className="text-second-text-color">Me</span>
         </h2>
-        <h3>Junior Full Stack Developer</h3>
-        <p>
+        <h3 className="text-xl mb-1 antialiased">
+          Junior Full Stack Developer
+        </h3>
+        <p className="text-sm">
           I'm a recent graduate of Code Institute with a strong foundation in
           coding and a unique background as a professional chef. My experience
           in the culinary world has equipped me with invaluable
@@ -38,7 +40,7 @@ const AboutSection = () => {
             contribute meaningfully to innovative projects.
           </span>
         </p>
-        <button className="mt-4" onClick={handleReadMore}>
+        <button className="btn mt-4" onClick={handleReadMore}>
           {showMore ? "Read Less" : "Read More"}
         </button>
       </div>

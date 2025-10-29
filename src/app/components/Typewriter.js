@@ -39,12 +39,7 @@ const Typewriter = () => {
 
     return () => clearTimeout(timeout);
   }, [text, isDeleting, pause, index]);
-  return (
-    <span className="text-xl md:text-3xl">
-      {text}
-      <span className="animate-pulse">|</span>
-    </span>
-  );
+  return <span className="text-second-text-color">{text}</span>;
 };
 
 export default Typewriter;
