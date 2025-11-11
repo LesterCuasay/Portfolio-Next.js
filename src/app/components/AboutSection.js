@@ -11,12 +11,9 @@ const AboutSection = () => {
   return (
     <section>
       <div>
-        <h2 className="text-2xl">
+        <h2 className="text-2xl mb-1">
           About <span className="text-second-text-color">Me</span>
         </h2>
-        <h3 className="text-xl mb-1 antialiased">
-          Junior Full Stack Developer
-        </h3>
         <p className="text-sm">
           I'm a recent graduate of Code Institute with a strong foundation in
           coding and a unique background as a professional chef. My experience
