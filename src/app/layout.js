@@ -22,13 +22,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
-      <body className="flex flex-col lg:flex-row lg:px-20 xl:px-80 h-dvh">
-        <div className="lg:w-[500px] py-10 px-5 lg:py-20 lg:px-10">
+      <body className="flex flex-col lg:flex-row max-w-7xl mx-auto h-dvh">
+        <div className="lg:w-[500px] py-10 px-5 lg:p-10">
           <Sidebar />
         </div>
-        <main className="lg:flex-1 lg:overflow-y-auto">
-          {children}
-        </main>
+        <main className="lg:flex-1 lg:overflow-y-auto">{children}</main>
       </body>
     </html>
   );

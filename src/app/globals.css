@@ -31,8 +31,8 @@ body {
 }
 
 section {
-  min-height: 100vh;
-  padding: 5rem 2rem;
+  /* min-height: 100vh; */
+  padding: 2.5rem 2rem;
 }
 
 h1 {

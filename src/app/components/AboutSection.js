@@ -9,7 +9,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section>
+    <section id="about">
       <div>
         <h2 className="text-2xl mb-1">
           About <span className="text-second-text-color">Me</span>
