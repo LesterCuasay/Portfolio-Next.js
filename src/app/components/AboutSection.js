@@ -11,7 +11,7 @@ const AboutSection = () => {
   return (
     <section id="about">
       <div>
-        <h2 className="text-2xl mb-1">
+        <h2 className="text-2xl mb-4 font-bold">
           About <span className="text-second-text-color">Me</span>
         </h2>
         <p className="text-sm">
