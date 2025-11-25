@@ -1,17 +1,23 @@
 export const experience = [
   {
-    role: "Frontend Developer",
-    company: "TechCorp",
-    period: "2022 - Present",
+    role: "Freelancer",
+    company: "Web developer",
+    period: "January 2025 - Present",
     description:
-      "Working on UI development using React, Next.js, and Tailwind.",
-    technologies: ["Next.js", "React", "TailwindCSS", "TypeScript"],
+      "Developing and maintaining websites for various clients, focusing on responsive design and user experience.",
+    technologies: ["Astro", "React", "TailwindCSS", "TypeScript"],
   },
   {
-    role: "Web Developer Intern",
-    company: "DevStudio",
-    period: "2021 - 2022",
-    description: "Built landing pages and handled client revisions.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    role: "Chef De Partie",
+    company: "Chestnut group",
+    period: "January 2024 - December 2024",
+    description: "Leading a team in a high-volume kitchen environment.",
+  },
+  {
+    role: "Career Transition",
+    company: "Code Institute",
+    period: "December 2022 - December 2023",
+    description: "Completed a Diploma in Full Stack Development.",
+    technologies: ["HTML", "CSS", "JavaScript", "Python", "Django"],
   },
 ];
