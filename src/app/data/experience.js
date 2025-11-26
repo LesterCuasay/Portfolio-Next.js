@@ -5,7 +5,7 @@ export const experience = [
     period: "January 2025 - Present",
     description:
       "Developing and maintaining websites for various clients, focusing on responsive design and user experience.",
-    technologies: ["Astro", "React", "TailwindCSS", "TypeScript"],
+    technologies: ["Astro", "React", "TailwindCSS"],
   },
   {
     role: "Chef De Partie",
