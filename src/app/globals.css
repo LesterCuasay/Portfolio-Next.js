@@ -64,3 +64,12 @@ h3 {
 .btn:active {
   transform: translateY(2px);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

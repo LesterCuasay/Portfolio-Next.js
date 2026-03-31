@@ -23,7 +23,7 @@ const Sidebar = () => {
           Lester Cuasay
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">
-          Junior Front End Developer
+          Front End Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal antialiased">
           I build accessible, user-friendly web applications.

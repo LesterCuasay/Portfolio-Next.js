@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <div className="lg:w-[500px] py-10 px-5 lg:p-10">
           <Sidebar />
         </div>
-        <main className="lg:flex-1 lg:overflow-y-auto">{children}</main>
+        <main className="lg:flex-1 lg:overflow-y-auto no-scrollbar">{children}</main>
       </body>
     </html>
   );
