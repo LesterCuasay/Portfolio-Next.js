@@ -1,0 +1,4 @@
+[build]
+  base = ""           # root of repo
+  publish = "out"
+  command = "npm run build"
